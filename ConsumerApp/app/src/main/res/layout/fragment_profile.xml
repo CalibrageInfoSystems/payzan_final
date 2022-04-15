@@ -1,0 +1,276 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_new"
+    android:clickable="true"
+
+    android:orientation="vertical"
+   >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/accent"
+        app:layout_scrollFlags="enterAlways"
+        app:title=""
+        app:titleTextColor="@color/accent"
+        app:titleTextAppearance="@style/Toolbar.TitleText">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/lyt_margin"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+
+                <LinearLayout
+
+                    android:layout_weight="0.6"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/profileimage"
+                        android:layout_width="@dimen/image_width"
+                        android:layout_height="@dimen/image_height"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_userp" />
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                        android:id="@+id/editimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/profileimage"
+                        android:layout_centerInParent="true"
+                        android:padding="6dp"
+                        android:text="Change Photo"
+                        android:textColor="@color/accent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1.4"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                        android:id="@+id/inp_fname"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                            android:id="@+id/firstNameEdt"
+                            style="@style/EditTextStyle"
+                            android:hint="@string/first_name"
+
+                            android:layout_width="match_parent"
+                            android:background="@drawable/roundededittext"
+                            app:backgroundTint="@color/very_light_gray" />
+                    </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+
+                    <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                        android:id="@+id/inp_laname"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                            android:id="@+id/lastNameEdt"
+                            style="@style/EditTextStyle"
+                            android:hint="@string/last_name"
+
+                            android:layout_width="match_parent"
+                            android:background="@drawable/roundededittext"
+                            app:backgroundTint="@color/very_light_gray" />
+                    </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/txt_height"
+                android:background="@color/very_light_gray"
+                android:padding="8dp"
+                android:text="Personal Details"
+                android:textSize="12sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/username"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/ic_user" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                        android:id="@+id/inp_username"
+                        app:hintEnabled="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                            android:id="@+id/usernamelayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/txt_height"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/usericon"
+                            android:text="@string/user_name" />
+                    </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                        android:id="@+id/userNameEdt"
+                        style="@style/EditTextStyle"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/roundededittext"
+                        app:backgroundTint="@color/very_light_gray" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/usercake"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/ic_user" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                        android:id="@+id/inp_dob"
+                        app:hintEnabled="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                            android:id="@+id/doblayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/txt_height"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/usericon"
+                            android:text="@string/date_of_birth" />
+                    </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                        android:id="@+id/dobEdt"
+                        style="@style/EditTextStyle"
+                        android:focusable="false"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/roundededittext"
+                        app:backgroundTint="@color/very_light_gray" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/usergender"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/ic_user" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                        android:id="@+id/genderlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/txt_height"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/usericon"
+                        android:text="@string/gender" />
+
+                    <RadioGroup
+                        android:id="@+id/gendergroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/gendrText"
+                        android:layout_toRightOf="@+id/gendericon"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/maleRB"
+                            android:layout_width="@dimen/rdo_width"
+                            android:layout_height="@dimen/rdo_height"
+                            android:text="@string/male"
+                            android:textColor="@color/list_bg_pressed"
+
+                            android:textSize="@dimen/txt_FontSize" />
+
+                        <RadioButton
+                            android:id="@+id/femaleRB"
+                            android:layout_width="@dimen/rdo_width"
+                            android:layout_height="@dimen/rdo_height"
+                            android:text="@string/female"
+                            android:textColor="@color/list_bg_pressed"
+
+                            android:textSize="@dimen/txt_FontSize" />
+                    </RadioGroup>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonButton
+                android:id="@+id/submit"
+                style="@style/ButtonStyle"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/btn_margin_left"
+                android:background="@drawable/border_fill_main_layout"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_FontSize" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_new"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/lyt_margin_left"
+            android:layout_marginRight="@dimen/lyt_margin_right"
+            android:layout_marginTop="@dimen/lyt_margin_top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/lyt_margin_bottom"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/img_height"
+                    android:layout_height="@dimen/img_width"
+                    android:layout_marginRight="@dimen/img_wallet_margin"
+                    android:layout_toLeftOf="@+id/header"
+                    app:srcCompat="@drawable/ic_television" />
+
+                <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                    android:id="@+id/header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/cabletv_sname"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_header" />
+            </LinearLayout>
+
+            <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/operatorTXT">
+
+                <Spinner
+                    android:id="@+id/operatorSpn"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:hint="Operator"
+                    android:imeOptions="actionNext"/>
+            </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+            <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/accontNoTXT">
+
+                <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                    android:id="@+id/accontNoEdt"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:hint="@string/account_number"
+                    android:imeOptions="actionNext"/>
+            </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+
+            <FrameLayout
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/amountTXT">
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                        android:id="@+id/amountEdt"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="@dimen/main_layout_head_bottom_margin"
+                        android:hint="@string/amount"
+                        android:inputType="numberDecimal"
+                        android:imeOptions="actionSend"/>
+                </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                    android:id="@+id/browsePlans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/browse_plans"
+                    android:textColor="@color/accent"
+                    android:textSize="@dimen/txt_FontSize" />
+            </FrameLayout>
+
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonButton
+                android:id="@+id/submit"
+                style="@style/ButtonStyle"
+                android:text="Proceed to Recharge"
+                android:textColor="@color/white"
+                android:imeOptions="actionSend"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

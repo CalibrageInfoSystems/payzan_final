@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_new"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/lyt_margin_left"
+            android:layout_marginRight="@dimen/lyt_margin_right"
+            android:layout_marginTop="@dimen/lyt_margin_top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/main_layout_head_bottom_margin"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/img_height"
+                    android:layout_height="@dimen/img_width"
+                    app:srcCompat="@drawable/ic_landline" />
+
+                <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/txt_margin"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:text="@string/landline"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_header" />
+            </LinearLayout>
+
+            <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/operatorTXT">
+
+                <Spinner
+                    android:id="@+id/operatorEdt"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/operator"
+                    android:imeOptions="actionNext"/>
+            </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+            <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/numberTXT">
+
+                <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                    android:id="@+id/mobilenoEdt"
+                    style="@style/EditTextStyle"
+                    android:drawableRight="@drawable/prepaid_contacts_icon"
+                    android:hint="@string/number_with_std_code"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="actionNext"/>
+            </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+            <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/circleTXT">
+
+                <Spinner
+                    android:id="@+id/circleEdt"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:hint="@string/select_circle"
+                    android:imeOptions="actionNext"/>
+            </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+            <FrameLayout
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/amountTXT">
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                        android:id="@+id/amount"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="@dimen/edt_bottom_margin"
+                        android:hint="@string/amount"
+                        android:inputType="numberDecimal"
+                        android:imeOptions="actionSend"/>
+
+                </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                    android:id="@+id/browsePlans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/lyt_margin_right"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/browse_plans"
+                    android:textColor="@color/accent"
+                    android:textSize="@dimen/txt_FontSize" />
+            </FrameLayout>
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonButton
+                android:id="@+id/submit"
+                style="@style/ButtonStyle"
+                android:text="@string/recharge"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:imeOptions="actionSend"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

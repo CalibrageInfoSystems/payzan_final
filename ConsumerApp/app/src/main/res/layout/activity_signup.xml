@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <!--  Header  Starts-->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lyt_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_header_height"
+        android:background="@color/DarkRed">
+
+        <ImageView
+
+            android:layout_width="@dimen/edittext_height"
+            android:layout_height="@dimen/img_back_height"
+            android:layout_gravity="center" />
+
+        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/sign_up"
+            android:textColor="@color/White"
+            android:textSize="@dimen/txt_FontSize" />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/header"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingBottom="@dimen/fiveDp"-->
+    <!--android:paddingTop="@dimen/fiveDp">-->
+    <!--&lt;!&ndash; Logo Start&ndash;&gt;-->
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginBottom="@dimen/btn_margin_bottom"-->
+    <!--android:src="@mipmap/home_logo" />-->
+    <!--&lt;!&ndash; Logo Ends &ndash;&gt;-->
+    <!--</LinearLayout>-->
+    <!--  Header Ends -->
+    <!-- Footer Start -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sixty"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+    <!-- Footer Ends -->
+    <ImageView
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:visibility="gone"
+        android:layout_below="@id/lyt_header"
+        android:id="@+id/img_headerimg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_img_height"
+        android:background="@drawable/home_logo"
+        android:scaleType="center"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/btn_margin_bottom"
+        android:src="@mipmap/home_logo" />
+    <!-- Registration Form -->
+    <LinearLayout
+        android:layout_marginTop="@dimen/lyt_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_headerimg"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:layout_marginRight="@dimen/fifteen"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/bottom_nav_height">
+        <!-- Full Name Label -->
+
+
+        <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+            android:id="@+id/reg_mobile_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="false"
+            app:hintEnabled="true">
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                android:id="@+id/reg_mobile"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_marginBottom="@dimen/edt_bottom_margin"
+                android:background="@drawable/roundededittext"
+                android:hint="@string/mobile_number_signup"
+                android:inputType="phone"
+                android:imeOptions="actionSend"
+                android:paddingLeft="@dimen/edt_text_pading_left"
+                android:textSize="@dimen/edt_FontSize" />
+        </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+        <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="false"
+            android:id="@+id/reg_email_til"
+            app:hintEnabled="true">
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                android:id="@+id/reg_email"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_marginBottom="@dimen/edt_bottom_margin"
+                android:background="@drawable/roundededittext"
+                android:hint="@string/email_optional"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:paddingLeft="@dimen/edt_text_pading_left"
+                android:textSize="@dimen/edt_FontSize" />
+        </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+        <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="true"
+            android:id="@+id/reg_password_til"
+            app:passwordToggleEnabled="true">
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                android:id="@+id/reg_password"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_marginBottom="@dimen/edt_bottom_margin"
+                android:background="@drawable/roundededittext"
+                android:fontFamily="serif"
+                android:hint="@string/create_password"
+                android:inputType="textPassword"
+                android:imeOptions="actionNext"
+                android:paddingLeft="@dimen/edt_text_pading_left"
+                android:textSize="@dimen/edt_FontSize" />
+        </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+
+        <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:hintEnabled="true"
+            android:id="@+id/reg_confirm_password_til"
+            app:passwordToggleEnabled="true">
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                android:id="@+id/reg_confirm_password"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_marginBottom="@dimen/edt_bottom_margin"
+                android:background="@drawable/roundededittext"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:imeOptions="actionSend"
+                android:paddingLeft="@dimen/edt_text_pading_left"
+                android:textSize="@dimen/edt_FontSize"
+                app:passwordToggleEnabled="true"/>
+        </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+
+        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+            android:id="@+id/terms_comditions"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/txt_margin"
+            android:gravity="center"
+            android:textColor="#263631"
+            android:text=""
+            android:textSize="@dimen/tenSP"
+            android:visibility="visible"/>
+
+        <com.calibrage.payzanconsumer.framework.controls.CommonButton
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginTop="@dimen/btn_margin_top"
+            android:background="@drawable/roundbutton"
+            android:text="@string/sign_up"
+            android:imeOptions="actionSend"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+        <!-- Link to Login Screen -->
+        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+            android:id="@+id/linkToLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/twentyDP"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:textColor="#263631"
+            android:textSize="@dimen/txt_FontSize" />
+
+        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/txt_height"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/txt_margin"
+            android:gravity="center"
+            android:text="- or -" />
+
+        <com.calibrage.payzanconsumer.framework.controls.CommonButton
+            android:id="@+id/fbBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginLeft="@dimen/btn_margin_left"
+            android:layout_marginRight="@dimen/btn_margin_right"
+            android:background="@drawable/roundbutton_facebook"
+            android:text="@string/signin_with_facebook"
+            android:textAllCaps="false"
+            android:imeOptions="actionSend"
+            android:textColor="@color/White" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login"
+            android:layout_width="@dimen/image_height"
+            android:layout_height="@dimen/image_width"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/thirtyDp"
+            android:layout_marginTop="@dimen/thirtyDp"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginLeft="@dimen/btn_margin_left"
+            android:layout_marginRight="@dimen/btn_margin_right"
+            android:layout_marginTop="@dimen/btn_margin_top"
+            android:background="@drawable/round_google_button"
+            android:text="@string/signin_with_google"
+            android:imeOptions="actionSend"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+    </LinearLayout>
+    <!-- Registration Form Ends -->
+</RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

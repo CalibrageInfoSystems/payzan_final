@@ -1,0 +1,264 @@
+<resources>
+    <string name="app_name">Payzan App</string>
+    <string name="facebook_app_id">267297907115951</string>
+    <string name="fb_login_protocol_scheme">fb267297907115951</string>
+    <string name="com_facebook_loginview_log_in_button">Connect</string>
+    <string name="com_facebook_loginview_log_out_button">Your Logout</string>
+    <string name="terms_and_conditions">By loging in,you accept our Term\'s &amp; Conditions and Privacy Policy</string>
+
+
+    <string name="canotlogin"> Can not Login..?</string>
+    <string name="mobile_recharge_sname">"Mobile recharge &amp; Pay bill"</string>
+    <string name="dth_sname">"DTH"</string>
+    <string name="water_sname">"Water"</string>
+    <string name="landline_sname">"Landline"</string>
+    <string name="cabletv_sname">"Cable TV"</string>
+    <string name="datacard_sname">"Data Card"</string>
+    <string name="electricity_sname">"Electricity"</string>
+    <string name="broadband_sname">"Broadband"</string>
+    <string name="wallet_sname">" My Wallet"</string>
+    <string name="login_sname">"Login"</string>
+    <string name="add_money_to_wallet">Add money to wallet</string>
+    <string name="enter_amount_to_be_added_in_the_wallet">Enter amount to be added in the wallet</string>
+    <string name="enter_promo_code">Enter promo code</string>
+    <string name="add_money">Add money</string>
+    <string name="subscriber_id">Subscriber ID</string>
+    <string name="select_operator">Select operator</string>
+    <string name="amount">Amount</string>
+    <string name="signin_with_facebook">Signin with Facebook</string>
+    <string name="password">Password</string>
+    <string name="mobile">Mobile </string>
+    <string name="login">Login</string>
+    <string name="don_t_have_account_signup">Don\'t have account..?Signup</string>
+    <string name="signin_with_google">Signin with Google</string>
+    <string name="signin_with_google_test">Signin with Google</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="current_operator">Current Operator</string>
+    <string name="talktime_topup">Talktime Topup</string>
+    <string name="special_recharge">Special Recharge</string>
+    <string name="proceed_to_recharge">Proceed to Recharge</string>
+    <string name="select_district">Select District</string>
+    <string name="service_no">Service No</string>
+    <string name="consumer_no">Consumer No</string>
+    <string name="proceed_to_pay_bill">Proceed to Pay Bill</string>
+    <string name="landline">Landline</string>
+    <string name="operator">Operator</string>
+    <string name="number_with_std_code">Number with STD Code</string>
+    <string name="select_circle">Select Circle</string>
+    <string name="browse_plans">browse Plans</string>
+    <string name="recharge">Recharge</string>
+    <string name="profile">Profile</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="gender">Gender</string>
+    <string name="mobile_number_signup">+94 Mobile Number</string>
+    <string name="email_optional">Email (Mandatory)</string>
+    <string name="create_password">Create Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or">- or -</string>
+    <string name="order_no">Order No 1234567</string>
+    <string name="date_order">15 sep 2017 08:15 PM</string>
+    <string name="comments">Comment(optional)</string>
+    <string name="send_money">Send Money</string>
+    <string name="select_board">Select Board</string>
+    <string name="already_have_account">Already have account? Login</string>
+    <string name="about_us">"About Us"</string>
+    <string name="addcard">"Add New Card"</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="data_card_number">Data Card Number</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="Update_Password">Update Password</string>
+    <string name="search_transactionid">Search Transaction id,Mobile No...</string>
+    <string name="AgentTransaction">Transaction</string>
+    <string name="AgentCommision">Commission</string>
+    <string name="enter_card_details">Enter Card Details</string>
+    <string name="card_number">Card Number</string>
+    <string name="expirydate">Expiry Date</string>
+    <string name="card_holder_name">Card Holder name </string>
+    <string name="card_label">Card Label(optional)</string>
+    <string name="savethis_card">Save this card for further transaction</string>
+    <string name="savecard">Save Card</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="currentpassword">Current Password</string>
+    <string name="newpassword">New Password</string>
+    <string name="retypepassword">Re-Type New Password</string>
+    <string name="change_password">Change password</string>
+    <string name="order_history">Order History</string>
+    <string name="terms_of_services">Terms of Service</string>
+    <string name="saved_cards">Saved Cards</string>
+    <string name="accountno">4166xxxxxxxxxxx000000|Bank Name</string>
+    <string name="savecardslock">Your Details are secured via 128 Bit encryption by xxxx</string>
+    <string name="note">Note:Once the password change is successful,you will need to Re-Login</string>
+
+
+    <string-array name="month_arrays">
+        <item>Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+
+    <string name="scan_barcode_button">Scan barcode</string>
+    <string name="no_barcode_captured">No barcode captured</string>
+    <string name="barcode_error_format">"Error reading barcode: %1$s"</string>
+
+    <!-- Strings related to barcode scanner -->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+
+    <string-array name="year_arrays">
+        <item>Year</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+
+    </string-array>
+
+    <string-array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+
+
+    <string name="payzan_wallet">PAYZAN WALLET</string>
+    <string name="recharge_and_bill_payments">RECHARGE AND BILL PAYMENTS</string>
+    <string name="wallet_balance">Wallet Balance :</string>
+
+    <string name="paysemd">pay/Send</string>
+    <string name="add_withdraw">Add/Withdrawal</string>
+
+    <string name="MyTransactions">My transctions</string>
+
+    <string name="home">Home</string>
+    <string name="wallet">Wallet</string>
+    <string name="offers">Offers</string>
+
+
+    <string name="lang">select language</string>
+
+    <string name="contin">Continue</string>
+
+    <string name="support">Support</string>
+    <string name="choose_language">Choose Language</string>
+
+
+    <string name="first_name">First Name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="email">Email</string>
+    <string name="select_province">Select Province</string>
+    <string name="select_mandal">Select Mandal</string>
+    <string name="select_village">Select Village</string>
+    <string name="address1">Address1</string>
+    <string name="address2">Address2</string>
+    <string name="landmark">LandMark</string>
+    <string name="enter_your_comments">Enter your comments</string>
+    <string name="submit">Submit</string>
+    <string name="partner_with_payzan">Partner with Payzan</string>
+    <string name="received">Received</string>
+    <string name="my_transaction">My Transaction</string>
+    <string name="send_money_to_wallet">Send Money to Wallet</string>
+    <string name="all">ALL</string>
+    <string name="paid">Paid</string>
+    <string name="added">Added</string>
+    <string name="add_moneys">+Add money</string>
+    <string name="prepaid">prepaid</string>
+    <string name="postpaid">postpaid</string>
+    <string name="save_card">Save Card</string>
+    <string name="save">Save</string>
+    <string name="user_name">User Name</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="update_operator">Update Operator</string>
+    <string name="account_number">Account Number</string>
+
+    <string name="err_enter_mobile_number">Enter mobile number</string>
+    <string name="err_enter_valid_mobile_no">Enter valid mobile no</string>
+    <string name="err_select_operator">Select operator</string>
+    <string name="err_enter_amount">Enter amount</string>
+    <string name="err_please_select_operator">Please select operator</string>
+    <string name="err">Enter number</string>
+    <string name="err_select_circle">Select circle</string>
+    <string name="err_enter_subscriber_id">Enter subscriber id</string>
+    <string name="err_please_enter_service_no">Please enter serviceno</string>
+    <string name="err_please_enter_amount">Please enter amount</string>
+    <string name="err_enter_account_no">Enter account no</string>
+    <string name="err_select_district">Select district</string>
+    <string name="err_enter_service_no">Enter service no</string>
+    <string name="err_select_board">Select board</string>
+    <string name="err_enter_consumer_no">Enter consumer no</string>
+    <string name="err_enter_data_card_no">Enter data card no.</string>
+    <string name="err_enter_mobile_no">Enter mobile no</string>
+    <string name="err_enter_first_name">Enter first name</string>
+    <string name="err_enter_last_name">Enter last name</string>
+    <string name="err_enter_email_id">Enter email id</string>
+    <string name="err_enter_valid_email">Enter valid email</string>
+    <string name="err_enter_state_name">Enter state name</string>
+    <string name="err_enter_district_name">Enter district name</string>
+    <string name="err_enter_mandal_name">Enter mandal name</string>
+    <string name="err_enter_village_name">Enter village name</string>
+    <string name="err_enter_address1">Enter address1</string>
+    <string name="err_enter_address2">Enter address2</string>
+    <string name="err_enter_landmark">Enter landmark</string>
+    <string name="err_enter_comments">Enter comments</string>
+    <string name="err_enter_number">Enter Number</string>
+    <string name="err_enter_password">Enter password</string>
+    <string name="err_password_length_invalid">Password length Invalid</string>
+    <string name="err_please_enter_mobile_no">Please enter mobile no.</string>
+
+    <string name="err_enter_valid_email_id">Enter valid email id</string>
+
+    <string name="err_enter_confirm_password">Please enter confirm password</string>
+    <string name="err_please_enter_character"><![CDATA[Please enter min 4 && max 20 character,1 uppercase character,1 number,1 special character]]></string>
+    <string name="err_please_enter_current_password">Please enter current password</string>
+    <string name="err_enter_new_password">Enter new password</string>
+    <string name="please_enter_new_valid_password">Please enter new valid  password</string>
+    <string name="err_enter_retype_password">Enter retype password</string>
+    <string name="err_enter_valid_firstname">Enter valid firstname</string>
+    <string name="err_enter_valid_lastname">Enter valid lastname</string>
+    <string name="err_enter_username">Enter user name</string>
+    <string name="err_enter_dob">Enter date of birth</string>
+    <string name="add_new_card">Add new Card</string>
+    <string name="err_enter_card_number">Enter card number</string>
+    <string name="err_enter_cardholder_name">Enter card holder name</string>
+    <string name="err_enter_month">Enter month</string>
+    <string name="err_enter_year">Enter year</string>
+    <string name="toast_fail">fail</string>
+    <string name="toast_check">check</string>
+    <string name="toast_amount_is_not_valid">amount is not valid</string>
+    <string name="toast_iscalling">is calling</string>
+    <string name="toast_sucess">sucess</string>
+    <string name="toast_signout">signout</string>
+    <string name="toast_allowed_special">Not allowed special characters</string>
+    <string name="toast_camera">camera permission granted</string>
+    <string name="toast_camera_denied">camera permission denied</string>
+    <string name="toast_please_login">Please Login</string>
+    <string name="toast_user_already_signup">User already signup  with details</string>
+    <string name="toast_clicked">clicked</string>
+    <string name="toast_obback">OB BACK</string>
+    <string name="toast_message">Message:</string>
+    <string name="toast_token">Token :</string>
+
+
+</resources>

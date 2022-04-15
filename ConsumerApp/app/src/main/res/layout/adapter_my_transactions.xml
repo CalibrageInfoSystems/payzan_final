@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/ic_up_arrow"
+        android:scaleType="center"
+        android:id="@+id/imageACK"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/main"
+        android:layout_toRightOf="@+id/imageACK"
+        android:gravity="center">
+
+    <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymentModeTxt"
+        android:text="Payzan Cash Received"
+        android:textColor="@color/accent"
+        android:textStyle="bold"
+        android:layout_margin="4dp"
+
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XXXX4330"
+        android:layout_below="@+id/paymentModeTxt"
+        android:layout_margin="4dp"
+        android:id="@+id/fromTxt"/>
+
+    <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amountTxt"
+        android:layout_alignParentRight="true"
+        android:text="+ 2000.00"
+        android:layout_margin="4dp"
+        android:textColor="@color/accent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="oct 14,4:45PM"
+        android:layout_below="@+id/amountTxt"
+        android:layout_margin="4dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/dateTxt"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray"
+        android:layout_below="@+id/imageACK"/>
+
+</RelativeLayout>

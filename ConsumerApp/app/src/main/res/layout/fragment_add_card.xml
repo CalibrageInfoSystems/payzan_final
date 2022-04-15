@@ -1,0 +1,186 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/accent"
+        app:layout_scrollFlags="enterAlways"
+        app:title=""
+        app:titleTextColor="@color/accent"
+        app:titleTextAppearance="@style/Toolbar.TitleText">
+    </android.support.v7.widget.Toolbar>
+
+<LinearLayout
+    android:layout_marginLeft="@dimen/lyt_home_margin_left"
+    android:layout_marginRight="@dimen/lyt_home_margin_right"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+        android:layout_marginRight="@dimen/txt_margin"
+        android:layout_marginLeft="@dimen/txt_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/txt_height"
+        android:layout_marginTop="15dp"
+        android:text="@string/enter_card_details"
+        android:textColor="@color/black"
+        />
+
+    <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardNumberTXT"
+        android:layout_marginRight="@dimen/txt_margin"
+        android:layout_marginLeft="@dimen/txt_margin">
+
+    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+
+        android:layout_marginBottom="@dimen/edt_bottom_margin"
+        android:id="@+id/cardNumberEdt"
+        android:background="@drawable/agent_transaction"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:hint="@string/card_number"
+        android:imeOptions="actionNext"/>
+    </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/expirydate"
+        android:textColor="@color/accent"
+        android:layout_marginLeft="20dp"
+        />
+
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+
+
+        <Spinner
+
+               android:layout_weight="1"
+                android:id="@+id/monthSp"
+                android:textColorHint="@color/light_gray"
+                android:background="@drawable/border_edit_text"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edt_height"
+                android:hint="@string/month"
+                android:imeOptions="actionNext"/>
+
+
+
+
+        <Spinner
+            android:layout_weight="1"
+                android:id="@+id/yearSp"
+                android:textColorHint="@color/light_gray"
+                android:background="@drawable/border_edit_text"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edt_height"
+                android:hint="@string/year"
+                android:imeOptions="actionNext"
+                android:layout_marginLeft="30dp"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardHolderNameTXT"
+
+            android:layout_marginRight="@dimen/txt_margin"
+            android:layout_marginLeft="@dimen/txt_margin">
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                android:layout_marginBottom="@dimen/edt_bottom_margin"
+                android:id="@+id/cardHolderNameEdt"
+                android:background="@drawable/agent_transaction"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:hint="@string/card_holder_name"
+                android:imeOptions="actionNext"/>
+        </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+
+        <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardLabelTXT"
+
+            android:layout_marginRight="@dimen/txt_margin"
+            android:layout_marginLeft="@dimen/txt_margin">
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                android:layout_marginBottom="@dimen/edt_bottom_margin"
+                android:id="@+id/cardLabelEdt"
+                android:background="@drawable/agent_transaction"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:hint="@string/card_label"
+                android:imeOptions="actionNext"/>
+        </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/saverdb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_btn"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/saveTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/savethis_card" />
+
+    </LinearLayout>
+
+    <com.calibrage.payzanconsumer.framework.controls.CommonButton
+
+        android:layout_margin="@dimen/btn_margin_left"
+        android:id="@+id/submit"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/border_fill_main_layout"
+        android:text="@string/savecard"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>
+
+</LinearLayout>

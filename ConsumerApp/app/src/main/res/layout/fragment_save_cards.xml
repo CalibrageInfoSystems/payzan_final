@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white_new"
+    android:clickable="true"
+   >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/accent"
+        app:layout_scrollFlags="enterAlways"
+        app:title=""
+        app:titleTextColor="@color/accent"
+        app:titleTextAppearance="@style/Toolbar.TitleText">
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/savecardrecycler"
+        android:layout_marginTop="15dp">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <com.calibrage.payzanconsumer.framework.controls.CommonButton
+        android:layout_margin="@dimen/btn_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:id="@+id/savecardbtn"
+        android:text="@string/add_new_card"
+        android:textAllCaps="false"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/white"
+        android:background="@color/accent"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/payment_lock_icon"/>
+
+        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/savecardslock"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
